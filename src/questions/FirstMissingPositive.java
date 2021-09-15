@@ -1,7 +1,10 @@
 package questions;
 
-public class findDuplicate {
-    public static int findDuplicate(int[] arr){
+//leetcode 41
+//https://leetcode.com/problems/first-missing-positive/
+
+public class FirstMissingPositive {
+    public static int solution(int[] arr){
         int i=0;
         while(i<arr.length){
             int correct = arr[i]-1;
@@ -25,7 +28,7 @@ public class findDuplicate {
     }
 
     public static void main(String[] args) {
-        int[] arr = {7,8,9,11,12};
-        System.out.println(findDuplicate);
+        int[] arr = {7,8,9,11,1,2,2};
+        System.out.println(solution(arr));
     }
 }
